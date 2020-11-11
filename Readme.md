@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Бондаренко](https://up.htmlacademy.ru/adaptive/21/user/1465599).
-* Наставник: `Неизвестно`.
+* Наставник:[Марианна Эльдарова](https://htmlacademy.ru/profile/id82294).
 
 ---
 
