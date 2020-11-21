@@ -20,24 +20,24 @@
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__logo">
-            <a href="index.html">
-              <img src="https://via.placeholder.com/102x84" alt="Флаг турестического города Седона">
-            </a>
-          </li>
           <li class="site-list__item">
             <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML academy</a>
           </li>
+          <li class="site-list__logo">
+            <a href="index.html">
+              <img src="https://via.placeholder.com/102x84" alt="Флаг турестического города Седона">
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-    <a href="#" class="page-header__logo">
-      <img class="page-header__logo-image page-header__logo-image--subtitle" src="https://via.placeholder.com/901x384"
+    <div  class="page-header__picture">
+      <img class="page-header__image page-header__image--subtitle" src="https://via.placeholder.com/901x384"
         width="901" height="384" alt="Город Седона">
-    </a>
+    </div>
   </header>
 
   <main class="page-main">
@@ -51,72 +51,41 @@
         <div class="form__wrapper">
           <fieldset class="form__user">
             <legend class="form__title">Представьтесь:</legend>
-            <p>
               <label class="form__label" for="first-name">Имя<sup>*</sup>:</label>
               <input class="form__field" id="first-name" type="text" name="first-name" placeholder="Петр">
-            </p>
-            <p>
               <label class="form__label" for="last-name">Фамилия<sup>*</sup>:</label>
               <input class="form__field" id="last-name" type="text" name="last-name" placeholder="Иванов">
-            </p>
-            <p>
               <label class="form__label" for="patronymic">Фамилия:</label>
-              <input class="form__field" id="first-name" type="text" name="patronymic" placeholder="Александрович">
-            </p>
+              <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </fieldset>
           <fieldset class="form__contacts">
-            <legend class="form-title">Контактная информация:</legend>
-            <p>
+            <legend class="form__title">Контактная информация:</legend>
               <label class="form__label" for="tel">Контактный телефон<sup>*</sup>:</label>
               <input class="form__field" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
               <button class="form__button form__button--tel"></button>
-            </p>
-            <p>
               <label class="form__label" for="email">Электроння почта<sup>*</sup>:</label>
               <input class="form__field" id="email" type="email" name="email" placeholder="Введите e-mail" required>
               <button class="form__button form__button--email"></button>
-            </p>
           </fieldset>
           <fieldset class="form__filters">
             <legend class="form__title">Ваше общее впечатление:</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label>
-                  <input type="radio" name="impression" value="positive" checked>Скорее положительное
-                 </label>
-              </li>
-              <li class="form__item">
-                <label>
-                  <input type="radio" name="impression" value="negative">Скорее отрицательное
-                 </label>
-              </li>
-              <li class="form__item">
-                <label>
-                  <input type="radio" name="impression" value="difficult">Затрудняюсь ответить
-                 </label>
-              </li>
-            </ul>
+            <input class="form__radio-field" id="positive" type="radio" name="impression" value="positive" checked>
+            <label class="form__radio-caption" for="positive">Скорее положительное</label>
+            <input class="form__radio-field" id="negative" type="radio" name="impression" value="negative">
+            <label class="form__radio-caption" for="negative">Скорее отрицательное</label>
+            <input class="form__radio-field" id="difficult" type="radio" name="impression" value="difficult">
+            <label class="form__radio-caption" for="difficult">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="form__attractions">
             <legend class="form__title">Посещенные достопримечательности</legend>
-            <ul>
-              <li class="form__item">
-                <input type="checkbox" checked>
-                <label for="">Мост Дьявола</label>
-              </li>
-              <li class="form__item">
-                <input type="checkbox" checked>
-                <label for="">Гора-Колокол</label>
-              </li>
-              <li class="form__item" checked>
-                <input type="checkbox">
-                <label for="">Слайд-парк</label>
-              </li>
-              <li class="form__item">
-                <input type="checkbox">
-                <label for="">Красные скалы</label></li>
-            </ul>
-
+                <input class="form__checkbox-field" id="checkbox1" type="checkbox" checked>
+                <label class="form__checkbox-caption" for="checkbox1">Мост Дьявола</label>
+                <input class="form__checkbox-field" id="checkbox2" type="checkbox" checked>
+                <label class="form__checkbox-caption" for="checkbox2">Гора-Колокол</label>
+                <input class="form__checkbox-field" id="checkbox3" type="checkbox" checked>
+                <label class="form__checkbox-caption" for="checkbox3">Слайд-парк</label>
+                <input class="form__checkbox-field" id="checkbox4" type="checkbox">
+                <label class="form__checkbox-caption" for="checkbox4">Красные скалы</label>
           </fieldset>
           <fieldset class="form__emotions">
             <legend class="form__title">Опишите свои эмоции:</legend>
