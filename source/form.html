@@ -51,12 +51,15 @@
         <div class="form__wrapper">
           <fieldset class="form__user">
             <legend class="form__title">Представьтесь:</legend>
-              <label class="form__label" for="first-name">Имя<sup>*</sup>:</label>
-              <input class="form__field" id="first-name" type="text" name="first-name" placeholder="Петр">
-              <label class="form__label" for="last-name">Фамилия<sup>*</sup>:</label>
-              <input class="form__field" id="last-name" type="text" name="last-name" placeholder="Иванов">
-              <label class="form__label" for="patronymic">Фамилия:</label>
-              <input class="form__field" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+              <label class="form__label">Имя<sup>*</sup>:
+                <input class="form__field" type="text" name="first-name" placeholder="Петр">
+              </label>
+              <label class="form__label">Фамилия<sup>*</sup>:
+                <input class="form__field" type="text" name="last-name" placeholder="Иванов">
+              </label>
+              <label class="form__label">Фамилия:
+                <input class="form__field" type="text" name="patronymic" placeholder="Александрович">
+              </label>
           </fieldset>
           <fieldset class="form__contacts">
             <legend class="form__title">Контактная информация:</legend>
@@ -69,27 +72,34 @@
           </fieldset>
           <fieldset class="form__filters">
             <legend class="form__title">Ваше общее впечатление:</legend>
-            <input class="form__radio-field" id="positive" type="radio" name="impression" value="positive" checked>
-            <label class="form__radio-caption" for="positive">Скорее положительное</label>
-            <input class="form__radio-field" id="negative" type="radio" name="impression" value="negative">
-            <label class="form__radio-caption" for="negative">Скорее отрицательное</label>
-            <input class="form__radio-field" id="difficult" type="radio" name="impression" value="difficult">
-            <label class="form__radio-caption" for="difficult">Затрудняюсь ответить</label>
+            <label class="form__radio-caption">
+              <input class="form__radio-field" type="radio" name="impression" value="positive" checked>Скорее положительное
+            </label>
+            <label class="form__radio-caption">
+              <input class="form__radio-field" type="radio" name="impression" value="negative">Скорее отрицательное
+            </label>
+            <label class="form__radio-caption">
+              <input class="form__radio-field" type="radio" name="impression" value="difficult">Затрудняюсь ответить
+            </label>
           </fieldset>
           <fieldset class="form__attractions">
             <legend class="form__title">Посещенные достопримечательности</legend>
-                <input class="form__checkbox-field" id="checkbox1" type="checkbox" checked>
-                <label class="form__checkbox-caption" for="checkbox1">Мост Дьявола</label>
-                <input class="form__checkbox-field" id="checkbox2" type="checkbox" checked>
-                <label class="form__checkbox-caption" for="checkbox2">Гора-Колокол</label>
-                <input class="form__checkbox-field" id="checkbox3" type="checkbox" checked>
-                <label class="form__checkbox-caption" for="checkbox3">Слайд-парк</label>
-                <input class="form__checkbox-field" id="checkbox4" type="checkbox">
-                <label class="form__checkbox-caption" for="checkbox4">Красные скалы</label>
+                <label class="form__checkbox-caption">
+                  <input class="form__checkbox-field"  type="checkbox" name="attractions" value="devils bridge" checked>Мост Дьявола
+                </label>
+                <label class="form__checkbox-caption">
+                  <input class="form__checkbox-field" type="checkbox" name="attractions" value="mountain bell" checked>Гора-Колокол
+                </label>
+                <label class="form__checkbox-caption">
+                  <input class="form__checkbox-field" type="checkbox" name="attractions" value="slice park" checked>Слайд-парк
+                </label>
+                <label class="form__checkbox-caption">
+                  <input class="form__checkbox-field" type="checkbox" name="attractions" value="red rocks">Красные скалы
+                </label>
           </fieldset>
           <fieldset class="form__emotions">
             <legend class="form__title">Опишите свои эмоции:</legend>
-            <textarea class="form__review" name="text" id="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__review" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button">Отправить отзыв</button>
         </div>
