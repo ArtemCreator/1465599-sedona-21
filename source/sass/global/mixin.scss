@@ -1,0 +1,14 @@
+@mixin headline {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+@mixin paragraph {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+@mixin list-clear {
+  margin: 0;
+  padding: 0;
+}
