@@ -1,0 +1,26 @@
+.reason__wrapper {
+  width: 320px;
+  margin: 0;
+}
+
+.reason__list {
+  @include reset-list();
+  text-align: center;
+}
+
+.reason__item:nth-child(1) {
+  background-color: $blue;
+  color: $white;
+}
+
+.reason__item {
+  text-transform: uppercase;
+}
+
+.reason-features__list {
+  list-style: none;
+}
+
+.reason-features__item {
+  text-transform: uppercase;
+}
