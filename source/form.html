@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body >
-  <header class="page-header">
-    <nav class="main-navigation">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML academy</a>
-          </li>
-          <li class="site-list__logo">
-            <a href="index.html">
-              <img src="https://via.placeholder.com/102x84" alt="Флаг турестического города Седона">
-            </a>
-          </li>
-        </ul>
+<body class="page__body">
+<header class="page-header">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML academy</a>
+        </li>
+      </ul>
+      <div class="page-header__logo">
+        <a class="page-header__link" href="index.html">
+          <img src="https://via.placeholder.com/102x84" alt="Флаг турестического города Седона">
+        </a>
       </div>
-    </nav>
-    <div  class="page-header__picture">
-      <img class="page-header__image page-header__image--subtitle" src="https://via.placeholder.com/901x384"
-        width="901" height="384" alt="Город Седона">
     </div>
-  </header>
+  </nav>
+</header>
 
   <main class="page-main">
+    <div class="page-header__picture">
+      <img class="page-header__image page-header__image--subtitle" src="https://via.placeholder.com/901x214"
+        width="901" height="214" alt="Город Седона">
+    </div>
+
     <section class="form">
+    <div class="form__wrapper">
       <header class="form__header">
         <h1 class="form__main-title">Оставьте свой отзыв</h1>
         <p class="form__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -57,7 +58,7 @@
               <label class="form__label">Фамилия<sup>*</sup>:
                 <input class="form__field" type="text" name="last-name" placeholder="Иванов">
               </label>
-              <label class="form__label">Фамилия:
+              <label class="form__label">Отчество:
                 <input class="form__field" type="text" name="patronymic" placeholder="Александрович">
               </label>
           </fieldset>
@@ -104,7 +105,7 @@
           <button class="button">Отправить отзыв</button>
         </div>
       </form>
-
+      </div>
     </section>
   </main>
 
@@ -138,7 +139,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-failure">
+  <section class="modal modal-failure modal--show">
     <div class="modal-failure__wrapper">
       <h2 class="modal-failure__title">Что-то пошло не так!</h2>
       <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -155,5 +156,4 @@
     </div>
   </section>
 </body>
-
 </html>
