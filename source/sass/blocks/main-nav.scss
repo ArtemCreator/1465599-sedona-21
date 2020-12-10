@@ -49,3 +49,41 @@
   text-decoration: none;
   color: $white;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    height: 100px;
+  }
+
+  .main-nav__list {
+    min-width: 640px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    min-width: 640px;
+    margin: 0 auto;
+  }
+
+  .main-nav__link {
+    color: $black;
+    font-size: 14px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    min-width: 960px;
+  }
+
+  .main-nav__wrapper {
+    min-width: 960px;
+  }
+}

@@ -1,8 +1,40 @@
 .sign-up {
   text-align: center;
   text-transform: uppercase;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+
+.sign-up__wrapper {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .sign-up__title {
   font-size: 21px;
+}
+
+.sign-up__description {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  .sign-up {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .sign-up__wrapper {
+    width: 458px;
+  }
+
+  .sign-up__title {
+    font-size: 30px;
+  }
+
+  .sign-up__description {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }

@@ -10,3 +10,9 @@
   height: 84px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
+}

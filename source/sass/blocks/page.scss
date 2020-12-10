@@ -11,8 +11,25 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  width: 320px;
   min-height: 100%;
   background-color: $white;
   color: $black;
+}
+
+.page__body--wrapper {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .page__body--wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__body--wrapper {
+    width: 1200px;
+  }
 }
